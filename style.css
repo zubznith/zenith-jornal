@@ -1,0 +1,50 @@
+/* style.css */
+body {
+    background-color: #000000; /* Negro para el fondo de toda la página */
+    color: #00FF00; /* Verde brillante para el texto (estilo retro terminal) */
+    font-family: 'Courier New', Courier, monospace; /* Tipo de letra monoespaciada */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para evitar barras de scroll innecesarias en el body */
+}
+
+#terminal {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    padding: 10px;
+    box-sizing: border-box; /* Para que el padding no aumente el tamaño total */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos hijos (output-area y prompt-line) verticalmente */
+    overflow-y: auto; /* Permitirá scroll si el contenido excede el alto */
+}
+
+#output-area {
+    flex-grow: 1; /* Hace que esta área ocupe todo el espacio vertical disponible */
+    overflow-y: auto; /* Si hay muchas líneas de salida, aparecerá un scroll aquí */
+    padding-bottom: 10px; /* Un pequeño espacio antes de la línea de prompt */
+}
+
+.output-line {
+    white-space: pre-wrap; /* Conserva los espacios y saltos de línea, y ajusta si es necesario */
+    margin-bottom: 5px; /* Espacio entre líneas de salida */
+}
+
+#prompt-line {
+    display: flex; /* Para alinear el prefijo del prompt y el input en la misma línea */
+    align-items: center; /* Centra verticalmente los ítems en la línea del prompt */
+}
+
+#user-prompt-prefix {
+    margin-right: 5px; /* Espacio entre el prefijo y el campo de input */
+}
+
+#command-input {
+    background-color: transparent; /* Sin fondo, para que se vea el de la terminal */
+    border: none; /* Sin borde */
+    color: inherit; /* Hereda el color de texto del body (verde) */
+    font-family: inherit; /* Hereda la fuente del body */
+    font-size: 1em; /* Tamaño de fuente estándar */
+    flex-grow: 1; /* Hace que el campo de input ocupe el resto del ancho disponible */
+    outline: none; /* Quita el borde que aparece al hacer foco */
+    caret-color: #00FF00; /* Color del cursor (caret) también verde */
+}
