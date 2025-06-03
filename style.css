@@ -48,3 +48,32 @@ body {
     outline: none; /* Quita el borde que aparece al hacer foco */
     caret-color: #00FF00; /* Color del cursor (caret) también verde */
 }
+/* --- AJUSTES PARA MÓVILES (Zenith Journal) --- */
+@media (max-width: 768px) { /* Para tablets y móviles grandes en vertical */
+    body {
+        font-size: 14px; /* Tamaño de fuente base ligeramente más pequeño */
+    }
+    #terminal {
+        padding: 8px;
+    }
+    /* Podrías necesitar ajustar el formato de la lista de comandos aquí si se ve muy apretada */
+    /* Ejemplo: .output-line (si la lista de comandos usa esta clase) { font-size: 0.9em; } */
+}
+
+@media (max-width: 480px) { /* Para móviles más pequeños */
+    body {
+        font-size: 12px; /* Aún más pequeño para que quepa mejor */
+    }
+    #terminal {
+        padding: 5px;
+    }
+    #command-input {
+        font-size: 1.1em; /* Hacer el input un poco más grande para teclear fácil */
+    }
+    .output-line { /* Para las líneas en general, incluyendo la lista de comandos */
+        line-height: 1.4em; 
+        margin-bottom: 3px;
+    }
+    /* Si la lista de comandos es muy ancha, podrías necesitar ajustar el .padEnd(18) en script.js 
+       para móviles o cambiar cómo se muestra la descripción aquí en CSS */
+}
