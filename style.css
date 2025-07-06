@@ -2,7 +2,7 @@
 body {
     background-color: #000000; /* Negro para el fondo de toda la página */
     color: #00FF00; /* Verde brillante para el texto (estilo retro terminal) */
-    font-family: 'Courier New', Courier, monospace; /* Tipo de letra monoespaciada */
+    font-family: 'Courier New', Courier, monospace; /* Tipo de letra typewriter */
     margin: 0;
     padding: 0;
     overflow: hidden; /* Para evitar barras de scroll innecesarias en el body */
