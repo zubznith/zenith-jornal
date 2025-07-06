@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "   EVERY ENTRY IS A NEW BEGINNING.",
         "   WHAT WILL YOU CREATE TODAY?"
     ];
-    const separator = "....";
+    const separator = "...";
     const commandsHeader = "   AVAILABLE COMMANDS:";
     const availableCommands = [
         { cmd: "NEW_THOUGHT", desc: "Create a new journal entry" },
