@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const themes = {
-        "classic_green": { bodyBg: "#000000", text: "#00FF00", inputBg: "transparent" },
+        "classic_green": { bodyBg: "#000960", text: "#fafafa, inputBg: "transparent" },
         "amber_retro": { bodyBg: "#2E1700", text: "#FFB000", inputBg: "transparent" },
         "blue_glow": { bodyBg: "#050A17", text: "#00BFFF", inputBg: "transparent" },
         "light_mode": { bodyBg: "#F0F0F0", text: "#222222", inputBg: "#E0E0E0" }
